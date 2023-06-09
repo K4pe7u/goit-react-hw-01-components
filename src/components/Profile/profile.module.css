@@ -1,0 +1,91 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 4px solid #ffffff;
+  box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.2);
+}
+
+.name {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.tag {
+  font-size: 24px;
+  color: #888888;
+  margin-bottom: 15px;
+}
+
+.location {
+  font-size: 20px;
+  color: #555555;
+  margin-bottom: 15px;
+}
+
+.stats {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.stats li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.label {
+  font-size: 18px;
+  color: #888888;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.quantity {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333333;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.stats li .quantity {
+  font-size: 20px;
+}
+
+.stats li .label,
+.stats li .quantity {
+  transition: color 0.3s ease-in-out;
+}
+
+.stats li:hover .label,
+.stats li:hover .quantity {
+  color: #ff6b6b;
+}
